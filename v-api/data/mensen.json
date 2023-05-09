@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "voornaam": "eerste",
+        "achternaam": "naam",
+        "geboortedatum": "1-1-2001"
+    },
+    {
+        "id": 1,
+        "voornaam": "tweede",
+        "achternaam": "naam",
+        "geboortedatum": "2-2-2001"
+    },
+    {
+        "id": 2,
+        "voornaam": "derde",
+        "achternaam": "naam",
+        "geboortedatum": "3-3-2001"
+    },
+    {
+        "id": 3,
+        "voornaam": "test",
+        "achternaam": "test",
+        "geboortedatum": "13-9-2021"
+    },
+    {
+        "id": 4,
+        "voornaam": "test2",
+        "achternaam": "test2",
+        "geboortedatum": "14-3-2001"
+    },
+    {
+        "id": 5,
+        "voornaam": "peter",
+        "achternaam": "de vries",
+        "geboortedatum": "24-6-2001"
+    },
+    {
+        "id": 6,
+        "voornaam": "string",
+        "achternaam": "string",
+        "geboortedatum": "string"
+    }
+]

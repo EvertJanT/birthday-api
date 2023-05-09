@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "naam": "Evert",
+    "mail": "evert@mai.com",
+    "telefoon": "98769878"
+  },
+  {
+    "id": 2,
+    "naam": "Femker",
+    "mail": "femke@mail.com",
+    "telefoon": "94435676"
+  }
+]

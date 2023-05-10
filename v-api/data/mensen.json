@@ -40,5 +40,11 @@
         "voornaam": "string",
         "achternaam": "string",
         "geboortedatum": "string"
+    },
+    {
+        "id": 7,
+        "voornaam": "jan",
+        "achternaam": "de wit",
+        "geboortedatum": "15-6-2005"
     }
 ]

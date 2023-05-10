@@ -12,9 +12,9 @@ app = FastAPI()
 def root():
     return {"message": "De verjaardag API"}
 
-@app.get("/mensen")
-def lees_mensen():
-    return api.lees_mensen()
+@app.get("/mensen/{geheim}")
+def lees_mensen(geheim:int):
+    return api.lees_mensen(geheim)
 
 @app.get("/zoekmens")
 #http://localhost:8080/zoekmens?voornaam=test&achternaam=test

@@ -1,7 +1,8 @@
 import json
 
 def lees_mensen(geheim: int):
-    with open('v-api/data/mensen.json') as stream:
+    #with open('v-api/data/mensen.json') as stream:
+    with open('data/mensen.json') as stream:   
         mensen = json.load(stream) 
     with open('v-api/data/geheim.json') as stream:
         geheimen = json.load(stream)
@@ -14,7 +15,8 @@ def lees_mensen(geheim: int):
     
 
 def zoek_mens(voornaam: str, achternaam:str ):
-    with open('v-api/data/mensen.json') as stream:
+    #with open('v-api/data/mensen.json') as stream:
+    with open('data/mensen.json') as stream:    
         mensen = json.load(stream)
     for mens in mensen:
         if mens['voornaam'] == voornaam and mens['achternaam'] == achternaam:
@@ -27,7 +29,8 @@ def zoek_mens(voornaam: str, achternaam:str ):
     
 
 def nieuw_mens(payload):
-    with open('v-api/data/mensen.json', 'r') as stream:
+    #with open('v-api/data/mensen.json', 'r') as stream:
+    with open('data/mensen.json', 'r') as stream:    
         mensen = json.load(stream)
         if mensen:
             #kijk naar het id van de laatste entry in mensen
@@ -39,7 +42,8 @@ def nieuw_mens(payload):
         payload['id'] = new_id
         mensen.append(payload)
 
-    with open('v-api/data/mensen.json', 'w') as stream:
+    #with open('v-api/data/mensen.json', 'w') as stream:
+    with open('data/mensen.json', 'w') as stream:    
         json.dump(mensen, stream, indent=4)
 
     return payload
@@ -47,7 +51,8 @@ def nieuw_mens(payload):
 
 
 def toon_gebruikers():
-    with open('v-api/data/gebruikers.json') as stream:
+    #with open('v-api/data/gebruikers.json') as stream:
+    with open('data/gebruikers.json') as stream:    
         gebruikers = json.load(stream)
 
     return gebruikers        
@@ -57,13 +62,16 @@ def toon_gebruikers():
 def toon_vrienden(gebruiker_id: int):
     gebruiker_resultaat = []
 
-    with open('v-api/data/resultaten.json') as stream:
+    #with open('v-api/data/resultaten.json') as stream:
+    with open('data/resultaten.json') as stream:    
         resultaten = json.load(stream)
 
-    with open('v-api/data/gebruikers.json') as stream:
+    #with open('v-api/data/gebruikers.json') as stream:
+    with open('data/gebruikers.json') as stream:    
         gebruikers = json.load(stream)
 
-    with open('v-api/data/mensen.json') as stream:
+    #with open('v-api/data/mensen.json') as stream:
+    with open('data/mensen.json') as stream:    
         mensen = json.load(stream)
 
     for resultaat in resultaten:

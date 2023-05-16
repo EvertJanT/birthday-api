@@ -5,7 +5,7 @@ def lees_mensen(geheim: int):
     with open('data/mensen.json') as stream:   
         mensen = json.load(stream) 
     #with open('v-api/data/geheim.json') as stream:
-    with open('/data/geheim.json') as stream:    
+    with open('data/geheim.json') as stream:    
         geheimen = json.load(stream)
     if geheimen[0]['geheim'] == geheim:
         uitkomst = mensen
